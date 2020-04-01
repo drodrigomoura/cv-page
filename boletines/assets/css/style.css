@@ -1,0 +1,187 @@
+/* 
+Rosa: #c6426e 
+Morado: #642b73
+Negro:#999
+Gris: #f5f5f5
+rosa-link : #df00f9
+*/
+html{
+    font-family: 'Comic Neue', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: #d500f9;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+img {
+    width: 100%;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+/*  */
+
+.container{
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+     max-width: 960px;
+     max-height: 500px;
+     width: 100%;
+     height: 80vh;
+     background-color: #fff;
+     border-radius: 10px;
+     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+     position: relative;
+
+     overflow: hidden;
+}
+
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #642b73;
+}
+th{display: none;}
+
+/* table td {
+    border: 1px solid black;
+} */
+
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #f3e5f5;
+}
+
+.glyphicon-star, .glyphicon-star-empty{
+    color: #ffc400;
+}
+
+.title-item{
+    border-bottom: solid 2px #c6426e;
+    padding-bottom: 1em;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.position{
+    background-color: #c6426e;
+    color: white;
+    padding: 0.5em;
+    margin-left: 10px;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+/* especificidad
+mientras mas especifico sea mas peso tendra (mas larga la etiqueta a modificar)
+
+mayor peso
+    1 style="background-color:pink; //embebido
+    2 Id
+    3 clase, atributos y pseudo clases
+    4 selector de tipo y pseudo elemento
+
+*/
+
+
+/* Position
+    no define en donde aparece un elemteno sino define como las posiciones o dimensiones especificadas en las propiedades top left right y bottom afectaran el lugar en donde se posicionara el elemento
+
+    valores: static(por defecto) | relative | absolute | fixed | sticky
+*/
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #642b73;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address{
+    font-weight: bold;
+    color: #642b73;
+    font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
+} 
+
+.main-img{
+    float: left;
+    margin-right: 1em;
+    height: 300px;
+    width: 250b;
+}
+
+@media(min-width:900px){
+    th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    .content{
+        padding: 1.8em;
+    }
+}
+
+@media (min-height:550px) {
+    .content{
+        height: 500px;
+    }
+}
